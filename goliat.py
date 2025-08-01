@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sistema Avanzado de Gestión de Contraseñas con IA v4.0.0
+Sistema Avanzado de Gestión de Contraseñas con IA v1.0.0
 Desarrollado por: github.com/nytrek
 Licencia: MIT
 """
@@ -1694,7 +1694,7 @@ class AdvancedPasswordManagerUI:
     def run_application(self):
         """Ejecuta la aplicación principal"""
         try:
-            self.console.print(f"[bold {self.config['theme']}]🚀 Iniciando Sistema Avanzado de Gestión de Contraseñas v4.0.0...[/bold {self.config['theme']}]")
+            self.console.print(f"[bold {self.config['theme']}]🚀 Iniciando Sistema Avanzado de Gestión de Contraseñas v1.0.0...[/bold {self.config['theme']}]")
             time.sleep(1)
             
             while True:
@@ -2036,7 +2036,7 @@ class AdvancedPasswordManagerUI:
                 "exported_at": datetime.now().isoformat(),
                 "count": len(passwords),
                 "passwords": passwords,
-                "system": "Password Manager AI v4.0"
+                "system": "Password Manager AI v1.0"
             }
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(export_data, f, indent=2, ensure_ascii=False)
@@ -2077,7 +2077,7 @@ class AdvancedPasswordManagerUI:
         <body>
             <div class="header">
                 <div class="title">Reporte de Contraseñas Generadas</div>
-                <div class="subtitle">Password Manager AI v4.0</div>
+                <div class="subtitle">Password Manager AI v1.0</div>
             </div>
             
             <div class="info">
@@ -2114,7 +2114,7 @@ class AdvancedPasswordManagerUI:
             </table>
             
             <div class="footer">
-                <p>Reporte generado automáticamente por Password Manager AI v4.0</p>
+                <p>Reporte generado automáticamente por Password Manager AI v1.0</p>
                 <p>github.com/nytrek</p>
             </div>
         </body>
@@ -2458,7 +2458,7 @@ class AdvancedPasswordManagerUI:
         self.console.print(f"\n[bold {self.config['theme']}]❓ AYUDA Y DOCUMENTACIÓN[/bold {self.config['theme']}]\n")
         
         help_content = """
-        [bold underline]🔐 SISTEMA AVANZADO DE GESTIÓN DE CONTRASEÑAS AI v4.0.0[/bold underline]
+        [bold underline]🔐 SISTEMA AVANZADO DE GESTIÓN DE CONTRASEÑAS AI v1.0.0[/bold underline]
         
         [bold]🎯 Objetivo:[/bold] Proporcionar herramientas avanzadas para generar, analizar y gestionar contraseñas seguras
         
@@ -2564,4 +2564,5 @@ class AdvancedPasswordManagerUI:
 # Ejecutar la aplicación
 if __name__ == "__main__":
     manager = AdvancedPasswordManagerUI()
+
     manager.run_application()
